@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: #555B6E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #89B0AE;
+  }
+  
+  .display #screen {
+    width: 97%;
+    height: 70px;
+    font-size: calc(35px + (20 - 16) * ((100vw - 320px) / (1600 - 320)));
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 12px 12px 20px #cbced1;
+    overflow: scroll;
+  }
+  
+  .btns {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .btns .row button {
+    width: calc(80px + (20 - 16) * ((100vw - 320px) / (1600 - 320)));
+    height: 30px;
+    font-size: calc(16px + (10 - 10) * ((100vw - 320px) / (1600 - 320)));
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #555B6E;
+  }
