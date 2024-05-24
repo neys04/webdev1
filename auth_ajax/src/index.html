@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication with AJAX</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class=" max-w-7xl h-dvh m-auto flex items-center">
+
+    <div class="m-auto max-w-sm w-full">
+        <form class="bg-white border-2 rounded-md px-8 pt-6 pb-8 mb-4">
+            <div class="text-center text-gray-700 text-lg">
+                <p id="titleField" class="font-medium"></p>
+            </div>
+            <div id="inputFields" class="mt-6">
+                <div class="mb-5">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Username
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username" type="text" placeholder="Username" required>
+                    <span class="text-red-500 text-xs italic hidden">Please choose a username</span>
+                </div>
+                <div class="mb-2">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Password
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-1 leading-tight focus:outline-none focus:shadow-outline"
+                        id="password" type="password" placeholder="******************" required>
+                    <p class="text-red-500 text-xs italic hidden">Please choose a password.</p>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-xs mb-2" for="" id="output">
+
+                    </label>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <input
+                        class="bg-blue-500 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mb-2 hover:cursor-pointer"
+                        type="submit" id="submitBtn">
+                    </button>
+                    <span
+                        class="inline-block align-baseline font-bold text-xs text-gray-700 hover:text-gray-400 hover:cursor-pointer"
+                        id="regAccount">
+                        Don't have an account yet?
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
